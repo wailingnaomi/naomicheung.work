@@ -1,0 +1,213 @@
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    /* background-color: #FBFBFB; */
+}
+
+/*************
+    HEADER
+*************/
+
+header{
+    margin-top: 3em;
+}
+
+#logo-name{
+    padding: 0;
+}
+
+#logo-name a{
+    color: #4F4F4F;
+
+}
+
+#nav a{
+    color: #333333;
+}
+
+#nav a#active{
+    color: #C79288;
+}
+
+
+
+a {
+    font-size: 1.5em;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/******************
+    INTRODUCTION
+*******************/
+
+#intro-text{
+    margin: 8em 0 8em 0;
+    /* font-size: 8em; */
+}
+
+#intro-text h2{
+    font-size: 3em;
+}
+
+/******************
+    PROJECTS
+*******************/
+
+img{
+    width: 100%;
+}
+
+.project{
+    margin: 1.5em 0 0 0
+}
+
+
+.project-container{
+    position: relative;
+    display: inline-block;
+    box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.05);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.project-container::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.15);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
+
+.project-container:hover{
+    transform: scale(1.01, 1.01);
+}
+
+.project-container:hover::after{
+    opacity: 1;
+}
+
+.project-subject{
+margin: 1em;
+}
+
+.project-topic{
+    color: #C79288;
+    border: 2px solid #C79288;
+    border-radius: 10px;
+    padding: 0 .5em;
+    height: 2em;
+    margin: 0 .5em 0 0;
+}
+
+.project-topic:last-of-type{
+    margin: 0;
+}
+
+
+
+p, h3{
+    margin: 0;
+}
+
+footer{
+    margin: 8em 0 3em 0 ;
+}
+
+@media (max-width: 768px) { 
+    a{
+        font-size: .8em;
+    }
+
+    #intro-text h2{
+        font-size: 1.5em;
+    }
+    
+    h3{
+        font-size: 1em;
+    }
+
+    .project-topic{
+        border: 1px solid #C79288;
+        border-radius: 5px;
+        font-size: .6em;
+    }
+
+ }
+
+ @media (max-width: 991.98px) { 
+
+    #intro-text h2{
+        font-size: 2em;
+    }
+
+    h3{
+        font-size: 1em;
+    }
+
+    .project-topic{
+        border: 1px solid #C79288;
+        border-radius: 5px;
+        font-size: .6em;
+    }
+
+  }
+
+/******************
+    BANNER
+*******************/
+.banner{
+    width: 100%;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 8em 0;
+
+}
+
+.banner-planc{
+    background-image: url('/images/planc.png');
+}
+
+.banner-luna{
+    background-image: url('/images/luna.png');
+}
+
+.banner-hvamaas{
+    background-image: url('/images/hvamaas.png');
+}
+
+.banner-christmastree{
+    background-image: url('/images/xmastree.png');
+}
+
+.line{
+    height: 4px;
+    width: 6em;
+    background-color: #C79288;
+    margin: 0 0 .5em 0;
+}
+
+
+.project-section{
+    margin: 6em 0 0 0 ;
+    
+}
+
+.project-text{
+    font-size: 20px;
+}
+
+#luna-img{
+    margin-top: 1em;
+}
+
+#hvamaas-img{
+    margin-top: 1em;
+}
+
+.about-title{
+    margin-top: 4em;
+}
